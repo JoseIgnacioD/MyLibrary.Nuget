@@ -31,10 +31,10 @@ stages:
         command: 'pack'
         packagesToPack: '**/*.csproj'
         versioningScheme: 'off'
-  
+
     - task: DotNetCoreCLI@2
       inputs:
         command: 'push'
         packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg'
         nuGetFeedType: 'internal'
-        publishVstsFeed: 'e60e16ef-4e27-4a3e-8267-572c9a0c7f7d'
+        publishVstsFeed: '017eecde-2c46-41b0-877d-7207f836dfa0/8ac9e72e-2657-429b-befa-ea24c28b7335'
